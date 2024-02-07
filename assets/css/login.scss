@@ -1,0 +1,222 @@
+@import './style.scss';
+
+main {
+   background: linear-gradient(to bottom, #00000081, #00000052), url("../img/startup-593341_1920.jpg") no-repeat top / cover fixed;
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+
+   .loWr {
+      width: 100%;
+      max-width: 420px;
+   
+      .fmWr {
+         backdrop-filter: blur(.75em) saturate(180%);
+         -webkit-backdrop-filter: blur(.75em) saturate(180%);
+         border: .1em solid #9999991a;
+         background-color: #00000070;
+         border-radius: 1em;
+
+         form {
+            padding: 2em 2.5em 2.5em;
+
+            h1 {
+               font: 600 2rem 'Nunito', sans-serif;
+               color: #ffffff;
+               margin: 0 0 1.3em;
+            }
+
+            .rec {
+               font: 600 1.7rem 'Nunito', sans-serif;
+
+            }
+
+            .ntfCnWr {
+               background: #ffffff;
+               max-width: 430px;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               gap: 1.3em;
+               padding: .75em 1.3em .75em .75em;
+               border-radius: .25em .45em .45em .25em;
+               border-left: .3em solid darkred;
+               margin: 0 0 2.5em;
+            
+               .msgWr {
+                  display: flex;
+                  align-items: center;
+                  gap: .75em;
+         
+                  i {
+                     color: darkred;
+                     font-size: 1.2rem;
+                  }
+         
+                  .msgC {
+                     display: flex;
+                     flex-direction: column;
+                     gap: .25em;
+         
+                     .sts {
+                        font-weight: 600;
+                        color: #000000;
+                        font-size: .9rem;
+                     }
+         
+                     .msg {
+                        color: #363636;
+                        font-size: .75rem;
+                        // font-weight: 600;
+                     }
+                  }
+               }
+            
+               .fa-xmark {
+                  color: #000000;
+                  font-size: .94rem;
+                  font-weight: 500;
+                  cursor: pointer;
+                  display: none;
+               }
+
+               &.scs {
+                  border-left: .3em solid darkgreen;
+
+                  .msgWr {
+
+                     i {
+                        color: darkgreen;
+                     }
+                  }
+               }
+            }
+
+            .inWr {
+               margin: .5em 0 1.5em;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               position: relative;
+               border-bottom: .1em solid #9999998f;
+               padding: .5em .1em .2em ;
+               width: 100%;
+
+               input {
+                  width: 100%;
+                  background: none;
+                  outline: none;
+                  border: none;
+                  padding: .6em 0;
+                  border-radius: 0 .3em .3em 0;
+                  font: .94rem "Nunito", sans-serif;
+                  color: #d6d5d5;
+
+                  &:focus, &:valid {
+
+                     + {
+
+                        label {
+                              top: -.67em;
+                              left: 2.12em;
+                              font-size: .78rem;
+                              font-weight: 500;
+                              z-index: 10;
+                              padding: 0 .3em;
+                              color: #999999ea;
+                        }
+                     }
+                  }
+               }
+
+               label {
+                  position: absolute;
+                  top: 1.1em;
+                  left: 2em;
+                  pointer-events: none;
+                  transition: all .4s ease-in-out;
+                  font: .94rem "Nunito", sans-serif;
+                  color: #999999;
+               }
+
+               i {
+                  font-size: .94rem;
+                  color: #999999;
+               }
+
+               .fa-envelope, .fa-lock-alt, .fa-user {
+                  padding: 0 1em 0 0;
+               }
+
+               .fa-eye, .fa-eye-slash {
+                  cursor: pointer;
+               }
+
+               .fa-eye {
+                  font-weight: 400;
+                  padding: 0 .3em 0 .75em;
+                  visibility: hidden;
+               }
+
+               .fa-eye-slash {
+                  padding: 0 .24em 0 .1em;
+               }
+            }
+
+            .inWre {
+               margin-bottom: 2.7em;
+            }
+
+            .rst {
+               text-align: right;
+               margin: -.9em 0 0;
+               padding: 0 .4em;
+
+               a {
+                  text-decoration: none;
+                  color: #ffffffd2;
+                  font: .88rem 'Nunito', sans-serif;
+               }
+            }
+
+            .smt {
+               margin: 1.5em auto 0;
+               position: relative;
+
+               input {
+                  border: none;
+                  outline: none;
+                  background: none;
+                  width: 100%;
+                  color: #ffffff;
+                  font: .86rem 'Nunito', sans-serif;
+                  padding: 1em 6em; 
+                  cursor: pointer;
+                  border: .1em solid #9999998f;
+                  border-radius: .5em;
+                  transition: all .5s ease-in-out;
+
+                  &:hover {
+                     background-color: #0000004d;
+                  } 
+
+                  &:active {
+                     transform: scale(.8);
+                  } 
+
+                  &:disabled {
+                     opacity: .6;
+                     pointer-events: none;
+                  }
+               }
+            }
+
+            .smtt {
+               margin: 2em 0 0 ;
+            }
+         }
+      }
+   }
+}

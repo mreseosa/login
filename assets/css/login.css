@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar&family=Lato&family=Nunito&family=Nunito+Sans&family=Lugrasimo&family=Borel&family=Dancing+Script&family=Open+Sans&family=Poppins&family=Roboto&family=Roboto+Condensed&family=Roboto+Flex:opsz@8..144&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  margin: auto;
+  font-family: "Nunito", sans-serif;
+  background-color: white;
+}
+body::-webkit-scrollbar {
+  width: 0.45em;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.6039215686);
+  border-radius: 3em;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.8823529412);
+}
+body .swal2-popup {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 0.86rem !important;
+}
+body .swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: #4962B3;
+  font-size: 12px;
+  border: none;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
+body form input::-ms-reveal, body form input::-ms-clear {
+  display: none !important;
+}
+body form input:-webkit-autofill {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
+body form input:-webkit-autofill:hover {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
+body form input:-webkit-autofill:focus {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
+body form input:-webkit-autofill:active {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
+
+main {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5058823529), rgba(0, 0, 0, 0.3215686275)), url("../img/startup-593341_1920.jpg") no-repeat top/cover fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .loWr {
+  width: 100%;
+  max-width: 420px;
+}
+main .loWr .fmWr {
+  backdrop-filter: blur(0.75em) saturate(180%);
+  -webkit-backdrop-filter: blur(0.75em) saturate(180%);
+  border: 0.1em solid rgba(153, 153, 153, 0.1019607843);
+  background-color: rgba(0, 0, 0, 0.4392156863);
+  border-radius: 1em;
+}
+main .loWr .fmWr form {
+  padding: 2em 2.5em 2.5em;
+}
+main .loWr .fmWr form h1 {
+  font: 600 2rem "Nunito", sans-serif;
+  color: #ffffff;
+  margin: 0 0 1.3em;
+}
+main .loWr .fmWr form .rec {
+  font: 600 1.7rem "Nunito", sans-serif;
+}
+main .loWr .fmWr form .ntfCnWr {
+  background: #ffffff;
+  max-width: 430px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.3em;
+  padding: 0.75em 1.3em 0.75em 0.75em;
+  border-radius: 0.25em 0.45em 0.45em 0.25em;
+  border-left: 0.3em solid darkred;
+  margin: 0 0 2.5em;
+}
+main .loWr .fmWr form .ntfCnWr .msgWr {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+}
+main .loWr .fmWr form .ntfCnWr .msgWr i {
+  color: darkred;
+  font-size: 1.2rem;
+}
+main .loWr .fmWr form .ntfCnWr .msgWr .msgC {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+main .loWr .fmWr form .ntfCnWr .msgWr .msgC .sts {
+  font-weight: 600;
+  color: #000000;
+  font-size: 0.9rem;
+}
+main .loWr .fmWr form .ntfCnWr .msgWr .msgC .msg {
+  color: #363636;
+  font-size: 0.75rem;
+}
+main .loWr .fmWr form .ntfCnWr .fa-xmark {
+  color: #000000;
+  font-size: 0.94rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: none;
+}
+main .loWr .fmWr form .ntfCnWr.scs {
+  border-left: 0.3em solid darkgreen;
+}
+main .loWr .fmWr form .ntfCnWr.scs .msgWr i {
+  color: darkgreen;
+}
+main .loWr .fmWr form .inWr {
+  margin: 0.5em 0 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-bottom: 0.1em solid rgba(153, 153, 153, 0.5607843137);
+  padding: 0.5em 0.1em 0.2em;
+  width: 100%;
+}
+main .loWr .fmWr form .inWr input {
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0.6em 0;
+  border-radius: 0 0.3em 0.3em 0;
+  font: 0.94rem "Nunito", sans-serif;
+  color: #d6d5d5;
+}
+main .loWr .fmWr form .inWr input:focus + label, main .loWr .fmWr form .inWr input:valid + label {
+  top: -0.67em;
+  left: 2.12em;
+  font-size: 0.78rem;
+  font-weight: 500;
+  z-index: 10;
+  padding: 0 0.3em;
+  color: rgba(153, 153, 153, 0.9176470588);
+}
+main .loWr .fmWr form .inWr label {
+  position: absolute;
+  top: 1.1em;
+  left: 2em;
+  pointer-events: none;
+  transition: all 0.4s ease-in-out;
+  font: 0.94rem "Nunito", sans-serif;
+  color: #999999;
+}
+main .loWr .fmWr form .inWr i {
+  font-size: 0.94rem;
+  color: #999999;
+}
+main .loWr .fmWr form .inWr .fa-envelope, main .loWr .fmWr form .inWr .fa-lock-alt, main .loWr .fmWr form .inWr .fa-user {
+  padding: 0 1em 0 0;
+}
+main .loWr .fmWr form .inWr .fa-eye, main .loWr .fmWr form .inWr .fa-eye-slash {
+  cursor: pointer;
+}
+main .loWr .fmWr form .inWr .fa-eye {
+  font-weight: 400;
+  padding: 0 0.3em 0 0.75em;
+  visibility: hidden;
+}
+main .loWr .fmWr form .inWr .fa-eye-slash {
+  padding: 0 0.24em 0 0.1em;
+}
+main .loWr .fmWr form .inWre {
+  margin-bottom: 2.7em;
+}
+main .loWr .fmWr form .rst {
+  text-align: right;
+  margin: -0.9em 0 0;
+  padding: 0 0.4em;
+}
+main .loWr .fmWr form .rst a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8235294118);
+  font: 0.88rem "Nunito", sans-serif;
+}
+main .loWr .fmWr form .smt {
+  margin: 1.5em auto 0;
+  position: relative;
+}
+main .loWr .fmWr form .smt input {
+  border: none;
+  outline: none;
+  background: none;
+  width: 100%;
+  color: #ffffff;
+  font: 0.86rem "Nunito", sans-serif;
+  padding: 1em 6em;
+  cursor: pointer;
+  border: 0.1em solid rgba(153, 153, 153, 0.5607843137);
+  border-radius: 0.5em;
+  transition: all 0.5s ease-in-out;
+}
+main .loWr .fmWr form .smt input:hover {
+  background-color: rgba(0, 0, 0, 0.3019607843);
+}
+main .loWr .fmWr form .smt input:active {
+  transform: scale(0.8);
+}
+main .loWr .fmWr form .smt input:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+main .loWr .fmWr form .smtt {
+  margin: 2em 0 0;
+}/*# sourceMappingURL=login.css.map */
