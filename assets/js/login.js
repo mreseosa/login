@@ -1,3 +1,6 @@
+
+// import 'signup.js';
+
 const email = document.querySelector('#email')
 const pwd = document.querySelector('#pwd')
 const login = document.querySelector('#login')

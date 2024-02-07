@@ -119,13 +119,13 @@ main {
                      + {
 
                         label {
-                              top: -.67em;
-                              left: 2.12em;
-                              font-size: .78rem;
-                              font-weight: 500;
-                              z-index: 10;
-                              padding: 0 .3em;
-                              color: #999999ea;
+                           top: -.67em;
+                           left: 2.12em;
+                           font-size: .78rem;
+                           font-weight: 500;
+                           z-index: 10;
+                           padding: 0 .3em;
+                           color: #b9b9b9ea;
                         }
                      }
                   }
@@ -138,12 +138,12 @@ main {
                   pointer-events: none;
                   transition: all .4s ease-in-out;
                   font: .94rem "Nunito", sans-serif;
-                  color: #999999;
+                  color: #b9b9b9;
                }
 
                i {
                   font-size: .94rem;
-                  color: #999999;
+                  color: #b9b9b9;
                }
 
                .fa-envelope, .fa-lock-alt, .fa-user {
@@ -155,12 +155,12 @@ main {
                }
 
                .fa-eye {
-                  font-weight: 400;
+                  // font-weight: 400;
                   padding: 0 .3em 0 .75em;
                   visibility: hidden;
 
                   &.show {
-                     color: darkgreen;
+                     color: green;
                   }
                }
 

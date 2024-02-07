@@ -163,7 +163,7 @@ main .loWr .fmWr form .inWr input:focus + label, main .loWr .fmWr form .inWr inp
   font-weight: 500;
   z-index: 10;
   padding: 0 0.3em;
-  color: rgba(153, 153, 153, 0.9176470588);
+  color: rgba(185, 185, 185, 0.9176470588);
 }
 main .loWr .fmWr form .inWr label {
   position: absolute;
@@ -172,11 +172,11 @@ main .loWr .fmWr form .inWr label {
   pointer-events: none;
   transition: all 0.4s ease-in-out;
   font: 0.94rem "Nunito", sans-serif;
-  color: #999999;
+  color: #b9b9b9;
 }
 main .loWr .fmWr form .inWr i {
   font-size: 0.94rem;
-  color: #999999;
+  color: #b9b9b9;
 }
 main .loWr .fmWr form .inWr .fa-envelope, main .loWr .fmWr form .inWr .fa-lock-alt, main .loWr .fmWr form .inWr .fa-user {
   padding: 0 1em 0 0;
@@ -185,12 +185,11 @@ main .loWr .fmWr form .inWr .fa-eye, main .loWr .fmWr form .inWr .fa-eye-slash {
   cursor: pointer;
 }
 main .loWr .fmWr form .inWr .fa-eye {
-  font-weight: 400;
   padding: 0 0.3em 0 0.75em;
   visibility: hidden;
 }
 main .loWr .fmWr form .inWr .fa-eye.show {
-  color: darkgreen;
+  color: green;
 }
 main .loWr .fmWr form .inWr .fa-eye-slash {
   padding: 0 0.24em 0 0.1em;
