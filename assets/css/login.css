@@ -189,6 +189,9 @@ main .loWr .fmWr form .inWr .fa-eye {
   padding: 0 0.3em 0 0.75em;
   visibility: hidden;
 }
+main .loWr .fmWr form .inWr .fa-eye.show {
+  color: darkgreen;
+}
 main .loWr .fmWr form .inWr .fa-eye-slash {
   padding: 0 0.24em 0 0.1em;
 }
@@ -234,4 +237,11 @@ main .loWr .fmWr form .smt input:disabled {
 }
 main .loWr .fmWr form .smtt {
   margin: 2em 0 0;
+}
+
+.errMsg {
+  color: red;
+  font-size: 0.86rem;
+  padding: 0 0.1em 0;
+  margin: -0.75em 0 1.5em;
 }/*# sourceMappingURL=login.css.map */

@@ -158,6 +158,10 @@ main {
                   font-weight: 400;
                   padding: 0 .3em 0 .75em;
                   visibility: hidden;
+
+                  &.show {
+                     color: darkgreen;
+                  }
                }
 
                .fa-eye-slash {
@@ -219,4 +223,12 @@ main {
          }
       }
    }
+}
+
+
+.errMsg {
+   color: red;
+   font-size: .86rem;
+   padding: 0 .1em 0;
+   margin: -.75em 0 1.5em;
 }
