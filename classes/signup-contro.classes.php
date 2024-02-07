@@ -1,5 +1,7 @@
 <?php
 
+   include "signup.classes.php";
+
    class SignUpContr {
       
       private $uid;
@@ -12,7 +14,7 @@
          $this->$email = $email;
          $this->$pwd = $pwd;
          $this->$pwdR = $pwdR;
-      }
+      } 
 
       private function emptyInput() {
          $result = "";
@@ -35,8 +37,44 @@
             $result = true;
          }
 
-         
+         return $result;
       }
+
+      private function invalidEmail() {
+         $result = "";
+
+         if (!filter_var($this->email. FILTER_VALIDATE_EMAIL)) {
+            $result = false;
+         } else {
+            $result = true;
+         }
+
+         return $result;
+      }
+
+      private function pwdMatch() {
+         $result = "";
+
+         if ($this->pwd !== $this->pwdR) {
+            $result = false;
+         } else {
+            $result = true;
+         }
+
+         return $result;
+      }
+
+      // private function pwdMatch() {
+      //    $result = "";
+
+      //    if ($this->checkUser($this->uid, $this->email)) {
+      //       $result = false;
+      //    } else {
+      //       $result = true;
+      //    }
+
+      //    return $result;
+      // }
    }
 
 ?>
