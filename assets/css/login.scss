@@ -1,7 +1,7 @@
 @import './style.scss';
 
 main {
-   background: linear-gradient(to bottom, #00000081, #00000052), url("../img/startup-593341_1920.jpg") no-repeat top / cover fixed;
+   background: linear-gradient(to bottom, #00000081, #00000052), url("../img/twitter-1522890_1280.jpg") no-repeat top / cover fixed;
    height: 100vh;
    width: 100%;
    display: flex;
@@ -13,12 +13,12 @@ main {
       max-width: 420px;
    
       .fmWr {
-         backdrop-filter: blur(.75em) saturate(180%);
-         -webkit-backdrop-filter: blur(.75em) saturate(180%);
+         backdrop-filter: blur(.85em) saturate(180%);
+         -webkit-backdrop-filter: blur(.85em) saturate(180%);
          border: .1em solid #9999991a;
          background-color: #00000070;
          border-radius: 1em;
-
+         
          form {
             padding: 2em 2.5em 2.5em;
 
@@ -26,11 +26,6 @@ main {
                font: 600 2rem 'Nunito', sans-serif;
                color: #ffffff;
                margin: 0 0 1.3em;
-            }
-
-            .rec {
-               font: 600 1.7rem 'Nunito', sans-serif;
-
             }
 
             .ntfCnWr {
@@ -155,7 +150,6 @@ main {
                }
 
                .fa-eye {
-                  // font-weight: 400;
                   padding: 0 .3em 0 .75em;
                   visibility: hidden;
 
@@ -169,7 +163,7 @@ main {
                }
             }
 
-            .inWre {
+            .inWrr {
                margin-bottom: 2.7em;
             }
 
@@ -216,14 +210,10 @@ main {
                   }
                }
             }
-
-            .smtt {
-               margin: 2em 0 0 ;
-            }
          }
       }
    }
-}
+}  
 
 
 .errMsg {

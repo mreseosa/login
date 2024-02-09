@@ -59,7 +59,7 @@ body form input:-webkit-autofill:active {
 }
 
 main {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5058823529), rgba(0, 0, 0, 0.3215686275)), url("../img/startup-593341_1920.jpg") no-repeat top/cover fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5058823529), rgba(0, 0, 0, 0.3215686275)), url("../img/twitter-1522890_1280.jpg") no-repeat top/cover fixed;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -71,8 +71,8 @@ main .loWr {
   max-width: 420px;
 }
 main .loWr .fmWr {
-  backdrop-filter: blur(0.75em) saturate(180%);
-  -webkit-backdrop-filter: blur(0.75em) saturate(180%);
+  backdrop-filter: blur(0.85em) saturate(180%);
+  -webkit-backdrop-filter: blur(0.85em) saturate(180%);
   border: 0.1em solid rgba(153, 153, 153, 0.1019607843);
   background-color: rgba(0, 0, 0, 0.4392156863);
   border-radius: 1em;
@@ -84,9 +84,6 @@ main .loWr .fmWr form h1 {
   font: 600 2rem "Nunito", sans-serif;
   color: #ffffff;
   margin: 0 0 1.3em;
-}
-main .loWr .fmWr form .rec {
-  font: 600 1.7rem "Nunito", sans-serif;
 }
 main .loWr .fmWr form .ntfCnWr {
   background: #ffffff;
@@ -194,7 +191,7 @@ main .loWr .fmWr form .inWr .fa-eye.show {
 main .loWr .fmWr form .inWr .fa-eye-slash {
   padding: 0 0.24em 0 0.1em;
 }
-main .loWr .fmWr form .inWre {
+main .loWr .fmWr form .inWrr {
   margin-bottom: 2.7em;
 }
 main .loWr .fmWr form .rst {
@@ -233,9 +230,6 @@ main .loWr .fmWr form .smt input:active {
 main .loWr .fmWr form .smt input:disabled {
   opacity: 0.6;
   pointer-events: none;
-}
-main .loWr .fmWr form .smtt {
-  margin: 2em 0 0;
 }
 
 .errMsg {

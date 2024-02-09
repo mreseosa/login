@@ -16,19 +16,6 @@ if (pwd.value.length > 1) {
 }
 
 
-
-let errMsg = {
-
-   email: {
-      error1: 'Please enter your email address!',
-      error2: 'Email address is invalid!'
-   },
-
-   pwd: {
-      error1: 'Please enter your password!'
-   }
-}
-
 login.addEventListener('click', function () {
    
    if (email.value.length < 1 && pwd.value.length < 1) {
