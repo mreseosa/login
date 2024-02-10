@@ -13,6 +13,9 @@ const spwdErr2 = document.querySelector('#spwdErr2')
 let stgBtn = document.querySelector('#stgBtn')
 let stgBtn2 = document.querySelector('#stgBtn2')
 
+var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+
+
 if (spwd.value.length > 1 || spwd2.value.length > 1) {
    shwTglBtn2()
 }
@@ -26,7 +29,7 @@ let errMsg = {
 
    email: {
       error1: 'Please enter your email address!',
-      error2: 'Email address is invalid!'
+      error2: 'Please enter a valid email address!'
    },
 
    pwd: {
@@ -45,7 +48,7 @@ signup.addEventListener('click', function () {
       errorC(errMsg.uName.error1, uNameErr)
       errorC(errMsg.email.error1, sEmailErr)
       errorC(errMsg.pwd.error1, spwdErr)
-      errorC(errMsg.pwd2.error1, [spwdErr2])
+      errorC(errMsg.pwd2.error1, spwdErr2)
       this.disabled = true
 
    } else if (uName.value.length < 1) {
@@ -58,6 +61,11 @@ signup.addEventListener('click', function () {
       errorC(errMsg.email.error1, sEmailErr)
       this.disabled = true
 
+   }  else if (!sEmail.value.match(validRegex)) {
+      sEmail.focus()
+      errorC(errMsg.email.error2, sEmailErr)
+      this.disabled = true
+
    } else if (spwd.value.length < 1) {
       spwd.focus()
       errorC(errMsg.pwd.error1, spwdErr)
@@ -65,7 +73,7 @@ signup.addEventListener('click', function () {
 
    } else if (spwd2.value.length < 1) {
       spwd2.focus()
-      errorC(errMsg.pwd2.error1, [spwdErr2])
+      errorC(errMsg.pwd2.error1, spwdErr2)
       this.disabled = true
    } 
 
@@ -135,7 +143,7 @@ sEmail.addEventListener('blur', function () {
 
 spwd.addEventListener('keyup', function () {
    signup.disabled = false
-   shwTglBtn()
+   shwTglBtn2()
 
    if (this.value.length > 1) {
       spwdErr.textContent = ''
@@ -165,7 +173,7 @@ spwd.addEventListener('blur', function () {
 
 spwd2.addEventListener('keyup', function () {
    signup.disabled = false
-   shwTglBtn()
+   shwTglBtn2()
 
    if (this.value.length > 1) {
       spwdErr2.textContent = ''

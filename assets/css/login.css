@@ -217,9 +217,10 @@ main .loWr .fmWr form .smt input {
   font: 0.86rem "Nunito", sans-serif;
   padding: 1em 6em;
   cursor: pointer;
-  border: 0.1em solid rgba(153, 153, 153, 0.5607843137);
   border-radius: 0.5em;
   transition: all 0.5s ease-in-out;
+  background: #000000; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 main .loWr .fmWr form .smt input:hover {
   background-color: rgba(0, 0, 0, 0.3019607843);

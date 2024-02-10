@@ -1,4 +1,5 @@
-@import './style.scss';
+@import 'assets.scss';
+@import 'style.scss';
 
 main {
    background: linear-gradient(to bottom, #00000081, #00000052), url("../img/twitter-1522890_1280.jpg") no-repeat top / cover fixed;
@@ -192,9 +193,10 @@ main {
                   font: .86rem 'Nunito', sans-serif;
                   padding: 1em 6em; 
                   cursor: pointer;
-                  border: .1em solid #9999998f;
+                  // border: .1em solid #9999998f;
                   border-radius: .5em;
                   transition: all .5s ease-in-out;
+                  @include primaryGradient;
 
                   &:hover {
                      background-color: #0000004d;
