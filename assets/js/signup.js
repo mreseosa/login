@@ -15,8 +15,6 @@ let stgBtn2 = document.querySelector('#stgBtn2')
 
 var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 
-// This is for the signup section in the login form
-
 if (spwd.value.length > 1 || spwd2.value.length > 1) {
    shwTglBtn2()
 }
